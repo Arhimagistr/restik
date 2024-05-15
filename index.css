@@ -1,0 +1,360 @@
+@import './styles/reset.css';
+
+@font-face {
+  font-family: 'PingFang SC';
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("PingFang SC"),
+    /* Если не получилось, загрузит woff2 */
+    url(".\src\fonts\PingFang-SC-Bold.ttf"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    /*url("/fonts/roboto.woff") format("woff");*/
+}
+
+@font-face {
+  font-family: 'PingFang SC';
+  font-style: heavy;
+  font-weight: 700;
+  font-display: swap;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("PingFang SC"),
+    /* Если не получилось, загрузит woff2 */
+    url(".\src\fonts\PingFang-SC-Heavy.ttf"),
+}
+
+@font-face {
+  font-family: 'PingFang SC';
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("PingFang SC"),
+    /* Если не получилось, загрузит woff2 */
+    url(".\src\fonts\PingFang-SC-Medium.ttf"),
+}
+
+@font-face {
+  font-family: 'PingFang SC';
+  font-style: regular;
+  font-weight: 400;
+  font-display: swap;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("PingFang SC"),
+    /* Если не получилось, загрузит woff2 */
+    url(".\src\fonts\PingFang-SC-Regular.ttf"),
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+:root {
+  --black: #000000;
+  --active: #966201;
+}
+
+html,
+body {
+  font-family: 'PingFang SC';
+  background: #151518;
+  color: #ffffff;
+}
+
+.text {
+  color: #dbdbdb;
+  font-size: 22px;
+  font-family: PingFang SC;
+  font-style: normal;
+
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+
+}
+
+.header {
+  color: #ffffff;
+  padding: 20px 0px;
+  /*   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 539.981px;
+  position: absolute;
+  width: 1280px;
+  height: 95.724px;
+  right: 0;
+  bottom: 775.276px;
+  padding: 24.545px 24.545px 24.545px 24.545px;
+  background: rgba(180, 150, 150, 0);
+  z-index: 56; */
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.back {
+  flex-shrink: 0;
+  position: relative;
+  width: 15.199px;
+  height: 26.405px;
+  background: url(./img/back.svg) no-repeat center;
+  color: #00ff0d;
+  background-size: cover;
+  z-index: 57;
+}
+
+
+.back:hover {
+  fill: #00ff0d;
+}
+
+
+.logo {
+  flex-shrink: 0;
+  position: relative;
+  width: 67.472px;
+  height: 67.472px;
+  background: url(./img/logo.png) no-repeat center;
+  background-size: cover;
+  z-index: 58;
+}
+
+.menu {
+  flex-shrink: 0;
+  position: relative;
+  width: 23.317px;
+  height: 20.863px;
+  background: url(./img/menu.svg) no-repeat center;
+  background-size: cover;
+  z-index: 59;
+}
+
+
+.container h1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #dededd;
+  font-family: PingFang SC, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 61.852px;
+  text-align: left;
+  z-index: 45;
+}
+
+
+
+.title {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 34px;
+  color: #dbdbdb;
+  font-family: PingFang SC, var(--default-font-family);
+  font-size: 24.54458236694336px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  white-space: nowrap;
+  opacity: 0.5;
+  z-index: 48;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  color: #c7c7c8;
+  font-family: PingFang SC, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  opacity: 0.5;
+  z-index: 49;
+}
+
+
+/* Products */
+
+.products {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  /*   align-items: flex-start; */
+}
+
+.product {
+  position: relative;
+  width: 220px;
+
+}
+
+.product_img {
+  object-fit: cover;
+  background-color: #966201;
+}
+
+.card_img {
+  width: 220px;
+  border-radius: 30px;
+
+
+}
+
+
+
+
+.ico {
+  position: absolute;
+  top: 10px;
+  left: 160px;
+  width: 50px;
+  height: 50px;
+  background: url(./img/ico.svg) no-repeat center;
+  z-index: 2;
+}
+
+.Chebureki {
+  flex-shrink: 0;
+  position: relative;
+  width: 220.901px;
+  height: 345.99px;
+  background: url(./img/Chebureki0.png) no-repeat center;
+  background-size: cover;
+  z-index: 4;
+}
+
+.CotletsIn {
+  flex-shrink: 0;
+  position: relative;
+  width: 220.901px;
+  height: 345.99px;
+  background: url(./img/CotletsIn0.png) no-repeat center;
+  background-size: cover;
+  z-index: 4;
+}
+
+.Mants {
+  flex-shrink: 0;
+  position: relative;
+  width: 220.901px;
+  height: 345.99px;
+  background: url(./img/Mants0.png) no-repeat center;
+  background-size: cover;
+  z-index: 4;
+}
+
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 12.272px;
+  position: relative;
+  width: 520.345px;
+  padding: 0 24.545px 0 24.545px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 47;
+}
+
+.banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 184.084px;
+  position: relative;
+  width: 1280px;
+  height: 142.359px;
+  margin: 70px 0 0 0;
+  padding: 29.453px 24.545px 29.453px 24.545px;
+  background: #1b1b20;
+  z-index: 46;
+  border-radius: 36.817px 36.817px 0 0;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 24.545px;
+  position: relative;
+  width: 468.802px;
+  z-index: 50;
+
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 12.272px;
+  position: relative;
+  width: 298.217px;
+  height: 80.997px;
+  padding: 8.591px 17.181px 8.591px 17.181px;
+  background: #26262d;
+  z-index: 51;
+  border-radius: 18.408px;
+
+}
+
+.orderIco {
+  flex-shrink: 0;
+  position: relative;
+  width: 24.545px;
+  height: 24.542px;
+  background: url(./img/order.svg) no-repeat center;
+  background-size: cover;
+  z-index: 52;
+}
+
+
+.mob {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 12.272px;
+  position: relative;
+  width: 146.04px;
+  height: 80.997px;
+  padding: 8.591px 17.181px 8.591px 17.181px;
+  cursor: pointer;
+  background: #26262d;
+  border: none;
+  z-index: 54;
+  border-radius: 18.408px;
+}
+
+.mobIco {
+  flex-shrink: 0;
+  position: relative;
+  width: 24.545px;
+  height: 24.545px;
+  background: url(./img/mob.svg) no-repeat center;
+  background-size: cover;
+  z-index: 55;
+}
