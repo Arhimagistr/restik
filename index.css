@@ -108,7 +108,7 @@ body {
   position: relative;
   width: 15.199px;
   height: 26.405px;
-  background: url(./img/back.svg) no-repeat center;
+  background: url(./src/img/back.svg) no-repeat center;
   color: #00ff0d;
   background-size: cover;
   z-index: 57;
@@ -125,7 +125,7 @@ body {
   position: relative;
   width: 67.472px;
   height: 67.472px;
-  background: url(./img/logo.png) no-repeat center;
+  background: url(./src/img/logo.png) no-repeat center;
   background-size: cover;
   z-index: 58;
 }
@@ -135,7 +135,7 @@ body {
   position: relative;
   width: 23.317px;
   height: 20.863px;
-  background: url(./img/menu.svg) no-repeat center;
+  background: url(./src/img/menu.svg) no-repeat center;
   background-size: cover;
   z-index: 59;
 }
@@ -224,7 +224,7 @@ body {
   left: 160px;
   width: 50px;
   height: 50px;
-  background: url(./img/ico.svg) no-repeat center;
+  background: url(./src/img/ico.svg) no-repeat center;
   z-index: 2;
 }
 
@@ -233,7 +233,7 @@ body {
   position: relative;
   width: 220.901px;
   height: 345.99px;
-  background: url(./img/Chebureki0.png) no-repeat center;
+  background: url(./src/img/Chebureki0.png) no-repeat center;
   background-size: cover;
   z-index: 4;
 }
@@ -243,7 +243,7 @@ body {
   position: relative;
   width: 220.901px;
   height: 345.99px;
-  background: url(./img/CotletsIn0.png) no-repeat center;
+  background: url(./src/img/CotletsIn0.png) no-repeat center;
   background-size: cover;
   z-index: 4;
 }
@@ -253,7 +253,7 @@ body {
   position: relative;
   width: 220.901px;
   height: 345.99px;
-  background: url(./img/Mants0.png) no-repeat center;
+  background: url(./src/img/Mants0.png) no-repeat center;
   background-size: cover;
   z-index: 4;
 }
@@ -324,7 +324,7 @@ body {
   position: relative;
   width: 24.545px;
   height: 24.542px;
-  background: url(./img/order.svg) no-repeat center;
+  background: url(./src/img/order.svg) no-repeat center;
   background-size: cover;
   z-index: 52;
 }
@@ -354,7 +354,7 @@ body {
   position: relative;
   width: 24.545px;
   height: 24.545px;
-  background: url(./img/mob.svg) no-repeat center;
+  background: url(./src/img/mob.svg) no-repeat center;
   background-size: cover;
   z-index: 55;
 }
